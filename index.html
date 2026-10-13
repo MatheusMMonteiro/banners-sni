@@ -3,8 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="./logos/seicho-no-ie.png" />
     <title>Criar Convite — Seicho-No-Ie</title>
+    <meta
+      name="description"
+      content="Crie convites para as reuniões da Seicho-No-Ie em poucos passos: escolha um modelo, escreva os textos e baixe a imagem pronta para enviar pelo WhatsApp. Gratuito e simples de usar."
+    />
+    <meta name="theme-color" content="#1f4e8c" />
+    <link rel="canonical" href="%VITE_SITE_URL%" />
+    <link rel="icon" type="image/png" href="./logos/seicho-no-ie.png" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+
+    <!-- Prévia do link ao compartilhar (WhatsApp, Facebook, Telegram...) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Criar Convite — Seicho-No-Ie" />
+    <meta property="og:title" content="Criar Convite — Seicho-No-Ie" />
+    <meta
+      property="og:description"
+      content="Escolha um modelo, escreva os textos e baixe o convite pronto para enviar pelo WhatsApp."
+    />
+    <meta property="og:url" content="%VITE_SITE_URL%" />
+    <meta property="og:image" content="%VITE_SITE_URL%og-image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Exemplos de convites da Seicho-No-Ie criados no site" />
+
+    <!-- Prévia no X/Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Criar Convite — Seicho-No-Ie" />
+    <meta
+      name="twitter:description"
+      content="Escolha um modelo, escreva os textos e baixe o convite pronto para enviar pelo WhatsApp."
+    />
+    <meta name="twitter:image" content="%VITE_SITE_URL%og-image.jpg" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Criar Convite — Seicho-No-Ie",
+        "url": "%VITE_SITE_URL%",
+        "description": "Crie convites para as reuniões da Seicho-No-Ie a partir de modelos prontos.",
+        "applicationCategory": "DesignApplication",
+        "operatingSystem": "Qualquer navegador",
+        "inLanguage": "pt-BR",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BRL" }
+      }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,6 +60,11 @@
     />
   </head>
   <body>
+    <noscript>
+      <p style="font: 20px sans-serif; padding: 24px">
+        Para criar o convite, é preciso ativar o JavaScript no seu navegador.
+      </p>
+    </noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

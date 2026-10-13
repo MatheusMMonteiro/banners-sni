@@ -46,11 +46,26 @@ npm run preview   # serve o dist/ localmente para conferir o build
 A pasta `dist/` pode ser publicada em qualquer hospedagem estática
 (GitHub Pages, Netlify, Vercel). O `vite.config.js` usa `base: './'`, então funciona em subpastas.
 
+### Endereço do site e prévia do link
+
+Quando alguém compartilha o link, o WhatsApp e as redes sociais mostram título, descrição e a imagem
+`public/og-image.jpg` (1200 × 630). Essas tags precisam do endereço completo do site, definido em `.env`:
+
+```bash
+VITE_SITE_URL=https://banners-sni.vercel.app/
+```
+
+Se publicar em outro endereço (um fork, um domínio próprio), troque esse valor **com a barra no final**
+e gere o build de novo. Para conferir a prévia depois de publicado, use o
+[Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/), que também força a atualização
+do cache. O WhatsApp usa as mesmas tags.
+
 ## Estrutura
 
 ```
 docs/                    imagens usadas neste README
 public/logos/            logos disponíveis para os convites
+public/og-image.jpg      imagem da prévia ao compartilhar o link
 src/
   main.jsx               ponto de entrada (tema MUI)
   theme.js               tema: fontes e botões grandes
